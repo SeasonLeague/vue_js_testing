@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: hsl(240, 35%, 87%);
 }
 
 html,
@@ -10,7 +11,7 @@ body {
 }
 
 #app {
-    width: 400px;
+    width: 100vw;
     height: 100vh;
     margin: auto;
     text-align: center;
@@ -49,11 +50,81 @@ button {
     background: #333;
     color: white;
     font-size: 18px;
-    border: 0;
+    border: 5px solid black;
     padding: 1rem 1.5rem;
     border-radius: 30px;
 }
 
 button:hover{
     background-color: hsl(240, 16%, 46%);
+}
+
+
+@media screen and (width <= 285px) {
+    #add{
+        width: 90px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        cursor: pointer;
+        font-size: 14px;
+        padding: .3rem;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 12px;
+    }
+}
+
+@media screen and (width <= 145px) {
+    h3{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 10px;
+    }
+}
+
+@media screen and (width <= 145px) {
+    h3{
+        font-size: 7px;
+    }
+}
+
+@media screen and (width <= 125px) {
+    img {
+        font-size: 7px;
+        border-radius: 60px solid;
+        border: 1px hsl(0, 7%, 8%);
+        margin-bottom: .2rem;
+        width: 50px;
+    }
+
+    button{
+        font-size: 7px;
+    }
+    h3{
+        font-size: 7px;
+    }
+    h5{
+        font-size: 7px;
+    }
+}
+
+@media screen and (width <= 51px) {
+    #gen{
+        font-size: 7px;
+    }
+    h3{
+        font-size: 4px;
+    }
+    h5{
+        font-size: 7px;
+    }
 }
